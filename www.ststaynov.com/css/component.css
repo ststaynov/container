@@ -1,14 +1,59 @@
 /* Set all parents to full height */
 html, body, 
 .container,
-#particles section { 
+#particles section	{ 
 	height: 100%;
 }
 
-#particles {
+#particles	{
 	background:#182327;
 }
 
-#particles-js{
-	height: 100%;
+.title_icon img	{
+	height: auto;
+    vertical-align: middle;
 }
+
+.title_icon img:after	{
+    content: '';
+    position: absolute;
+    width: 570px;
+    height: 2px;
+    top: 23px;
+    left: -261px;
+    background: #bababa;
+    z-index: -1;
+}
+/*About Me Start*/
+#about_me	{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+}
+
+/*About Me End*/
+
+/*My Skills Start*/
+#my_skills	{
+	width: 100%;
+	height: 100%;
+	background: #f7ddbe;
+}
+/*My Skills End*/
+
+/*Hobby Language Start*/
+#hobby_language	{
+	width: 100%;
+	height: 100%;
+	background: #1f2a30;
+}
+/*Hobby Language End*/
+
+/*Footer Start*/
+#footer	{
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+/*Footer End*/
