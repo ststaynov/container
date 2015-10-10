@@ -31,6 +31,71 @@ html, body,
 	height: 100%;
 	background: #FFF;
 }
+#about_me .photo	{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	background-color: #ededed;
+	float: left;
+}
+#about_me .photo img	{
+	max-height: 599px;
+	left: 235px;
+	position: absolute;
+}  
+#about_me .photo .rectangle_items	{
+	position: relative;
+	
+} 
+#about_me .photo .rectangle	{
+	width: 224px;
+	height: 74.5px;
+	float: left;
+	z-index: 1;
+	background: #000;
+	opacity: 0.2;
+    border: 1px solid white;
+} 
+#about_me .photo .rectangle:nth-of-type(4n+1)	{
+	background: #000;
+	opacity: 0.6;
+} 
+#about_me .timeline	{
+	width: 50%;
+	height: 92%;
+	display: inline-block;
+	position: relative;
+	background: pink;
+} 
+#about_me .timeline .line	{
+	position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #bababa;
+}
+#about_me .timeline .timeline_item	{
+	display: block;
+	overflow: hidden;
+}
+#about_me .timeline .timeline_icon	{
+	left: 47.20%;
+	margin: 30px 0 0 0;
+	position: absolute;
+}
+#about_me .timeline .timeline_date	{
+    width: 50%;
+    position: relative;
+    float: right;
+}
+#about_me .timeline .timeline_event	{
+    width: 50%;
+    position: relative;
+    float: left;
+}
 
 /*About Me End*/
 
