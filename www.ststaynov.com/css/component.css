@@ -1,0 +1,13 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+#particles section { 
+	height: 100%;
+}
+
+#particles {
+	background:#182327;
+}
+#particles-js{
+	height:100%;
+}
