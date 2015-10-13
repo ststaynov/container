@@ -8,7 +8,9 @@
 		<title>Stoyan Staynov. </title>
 		<meta name="description" content="UI and UX Designer." />
 		<meta name="author" content="Stoyan Staynov" />
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />	
+        <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    	<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<!--<script src="js/modernizr.custom.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
@@ -21,6 +23,10 @@
 <!-- 		<div id="preloader">
         <div id="loading-animation">&nbsp;</div> -->
     </div>
+        <!--Code for the particle section-->
+        <section id="particles">
+        <div id="particles-js"></div>
+        </section>
 		<div class="container">
 
 			<!-- <header class="clearfix">
@@ -30,20 +36,18 @@
 				<a href="http://www.dribbble.com/nathanriley" target="_blank" class="shareicon2 entypo-dribbble wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"></a>
 				<a href="mailto:hey@nrly.co" class="shareicon2 entypo-mail wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.5s"></a>
 			</header>	 -->
-
-            <!--Code for the particle section-->
-				<section id="particles">
-				<div id="particles-js"></div>
-                </section>
+            <header class="span-12 push-6custom">
+                <h1>Stoyan Staynov</h1>
+            </header>
             
             <!--Code for the About Me section-->
-                <section id="about_me">
-                    <h2>About Me</h2>
+                <section id="about_me" >
+                    <h2 class="title span-24">About Me</h2>
                     <!-- <span class="title_icon">
-                        <img src="images/glasses_20x20.png" alt="">
+                        <img src="img/glasses_20x20.png" alt="">
                     </span> -->
-                    <div class="photo">
-                        <img src="images/me_203x580.png" alt=""> 
+                    <div class="photo span-11">
+                        <img src="img/me_203x580.png" alt=""> 
                         <div class="rectangle_items">  
                             <div class="rectangle"></div>
                             <div class="rectangle"></div>
@@ -72,11 +76,11 @@
                         </div>       
                     </div>
 
-                    <div class="timeline">
+                    <div class="timeline span-11 push-2">
                         <div class="line"></div>
                         <div class="timeline_item timeline_left">
                             <div class="timeline_icon">
-                                <img src="images/glasses_20x20.png" alt="">
+                                <img src="img/glasses_20x20.png" alt="">
                             </div>
                             <div class="timeline_date">
                                 <h1>25.01.2013</h1> 
@@ -88,7 +92,7 @@
                         </div>
                         <div class="timeline_item timeline_right">
                             <div class="timeline_icon">
-                                <img src="images/glasses_20x20.png" alt="">
+                                <img src="img/glasses_20x20.png" alt="">
                             </div>
                             <div class="timeline_date">
                                 <h1>25.01.2013</h1> 
@@ -117,15 +121,57 @@
                 </section>
             
             <!--Code for the My Skills section-->
-            <section id="my_skills">
-            </section>
-            
+                <section id="my_skills">
+                    <h2 class="">My Skills</h2>
+                    <span class="span-24">
+                        <div class="title_icon span-12 push-6">
+                            <img src="img/glasses_20x20.png" alt="">
+                        </div>
+                    </span>
+                    <aside class="shelf_left span-12"> 
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">Ps</h1>
+                            <img src="img/ps.png" alt="Bookshelf">
+                        </div>
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">DW</h1>
+                            <img src="img/dw.png" alt="Bookshelf">
+                        </div>
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">HTML 5</h1>
+                            <img src="img/html.png" alt="Bookshelf">
+                        </div>
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">CSS</h1>
+                            <img src="img/css.png" alt="Bookshelf">
+                        </div>
+                    </aside>
+                    <aside class="shelf_right span-12"> 
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">Javascript</h1>
+                            <img src="img/javascript.png" alt="Bookshelf">
+                        </div>
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">PHP</h1>
+                            <img src="img/php.png" alt="Bookshelf">
+                        </div>
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">Ai</h1>
+                            <img src="img/ai.png" alt="Bookshelf">
+                        </div>
+                        <div class="shelf_item span-10 push-2">
+                            <h1 class="span-2">C#</h1>
+                            <img src="img/csharp.png" alt="Bookshelf">
+                        </div>
+                    </aside>
+                </section>
+                
             <!--Code for the My Skills section-->
-            <section id="hobby_language">    
+            <section id="hobby_language" >    
             </section>
            
             <!--Code for the My Skills section-->
-            <section id="footer">
+            <section id="footer" ">
             </section>
             
         </div>
@@ -133,7 +179,7 @@
  			<script>
 		particlesJS('particles-js', {
     particles: {
-        color: '#abab81',
+        color: '#83E083',
         shape: 'triangle',
         opacity: 1,
         size: 2.5,
@@ -142,7 +188,7 @@
         line_linked: {
             enable_auto: true,
             distance: 340,
-            color: '#4f5b60',
+            color: '#83E083',
             opacity: 0.5,
             width: 1,
             condensed_mode: {
