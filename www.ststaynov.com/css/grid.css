@@ -14,6 +14,7 @@
 /* A container should group all your columns. */
 .container {
   max-width: 59.375em;
+  max-height: 100%;
   margin: 0 auto;
 }
 
