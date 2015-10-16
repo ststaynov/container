@@ -14,25 +14,7 @@ header {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
-header h1:before {
-    content: "";
-    border: 2px solid #222223;
-    width: 20%;
-    display: block;
-    margin: 0px auto;
-}
-header h1:after {
-    content: "";
-    border: 2px solid #222223;
-    width: 20%;
-    display: block;
-    margin: 0px auto;	
-}
-
-.title h2 {
-	
-}
-#particles {
+.particles {
 	background:#000;
 	height:100%;
 }
@@ -67,7 +49,7 @@ header h1:after {
 	float: left;
 }
 #about_me .photo img {
-	width: 47%;
+	width: 41%;
 	max-height:585px;
 	left: 25%;
 	position: absolute;
@@ -79,7 +61,7 @@ header h1:after {
 } 
 #about_me .photo .rectangle	{
 	width: 33.3%;
-	height: 74.5px;
+	height: 64.5px;
 	float: left;
 	z-index: 1;
 	background: #000;
@@ -91,7 +73,7 @@ header h1:after {
 	opacity: 0.6;
 } 
 #about_me .timeline	{
-	height: 92%;
+	height: auto;
 	margin-right: 0px;
 	display: inline-block;
 	position: relative;
@@ -122,6 +104,7 @@ header h1:after {
 }
 #about_me .timeline .timeline_event	{
     width: 50%;
+    height: auto;
     position: relative;
     float: left;
 }	
@@ -130,32 +113,35 @@ header h1:after {
 
 /*My Skills Start*/
 #my_skills {
-	max-width: 950px;
-	height: 66.66666666%;
 	background: #f7ddbe;
 	text-align: center;
 }
-#my_skills h1 {
-	
+#my_skills .skills {
+	max-height: auto; 
+}
+#my_skills .shelf_left {
+	border-right: 3px solid black;
 }
 #my_skills aside .shelf_item {
 	width: 100%;
 	float: left;
-	margin:0 0 5px 30%;
+	margin:0 0 5px 10%;
 }
-#my_skills aside .shelf_item h1 {
-	margin-top: 2em;
+#my_skills aside .shelf_item h2 {
+	width: 30%;
+	color: black;
 }
 
 #my_skills aside .shelf_item img {
 	width:40%;
 	float: left;
 }
+
 /*My Skills End*/
 
 /*Projects Start*/
 #projects	{
-	height: 100%;
+	height: auto;
 	background: #1f2a30;
 }
 .projects_title {
@@ -165,32 +151,21 @@ header h1:after {
 	text-align: center;
 	overflow: hidden;
 }
-.projects_title h1 {
-	width:100%;
-	margin: 36px 0 36px 0;
-	color: #000;
-	font-size: 2em;
-	font-weight: bold;
+#projects div {	
+	border: 1px solid white;
+	background: #000;
 }
-.projects_title h1:before {
-    content: "";
-    border: 2px solid #222223;
-    width: 20%;
-    display: block;
-    margin: 0px auto;
+#projects .row_top div {	
+	border-bottom: none;
 }
-.projects_title h1:after {
-    content: "";
-    border: 2px solid #222223;
-    width: 20%;
-    display: block;
-    margin: 0px auto;	
+
+
+#projects div img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
 }
-.projects .row div img{
-	max-width: 100%;
-	height: auto;
-}
-/*Hobby Language End*/
+/*Projects End*/
 
 /*Footer Start*/
 #footer	{
