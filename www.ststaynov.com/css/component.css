@@ -1,24 +1,33 @@
 /* Set all parents to full height */
 html, body, 
 .container,
-#particles section	{ 
+#particles { 
 	height: 100%;
 }
 header {
   position: absolute;
-  z-index: 1000;
   top: 45%;
   left: 25%;
   text-align: center;
-  color: white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
 }
-.particles {
-	background:#000;
-	height:100%;
+.bg-portrait {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    background: url('../img/bg-portrait.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
 }
-
+.bg-portrait section {
+	position: absolute;
+	width: 100%;
+}
+.intro {
+	height: 100%;
+}
 .title_icon img	{
 	height: auto;
     vertical-align: middle;
@@ -37,87 +46,21 @@ header {
 #about_me {
 	max-width: 950px;
 	height: 100%;
-	background: #000;
+	top: 100%;
 	text-align: center;
 }
-#about_me .photo {
-	height: auto;
-	margin-right: 0;
-	display: inline-block;
-	position: relative;
-	background-color: #ededed;
-	float: left;
-}
-#about_me .photo img {
-	width: 41%;
-	max-height:585px;
-	left: 25%;
-	position: absolute;
-
-}  
-#about_me .photo .rectangle_items {
-	position: relative;
-	background-image: 
-} 
-#about_me .photo .rectangle	{
-	width: 33.3%;
-	height: 64.5px;
-	float: left;
-	z-index: 1;
-	background: #000;
-	opacity: 0.2;
-    border: 1px solid white;
-} 
-#about_me .photo .rectangle:nth-of-type(4n+1) {
-	background: #000;
-	opacity: 0.6;
-} 
-#about_me .timeline	{
-	height: auto;
-	margin-right: 0px;
-	display: inline-block;
-	position: relative;
-	background: pink;
-} 
-#about_me .timeline .line {
-	position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -1px;
-    width: 2px;
-    height: 100%;
-    background: #bababa;
-}
-#about_me .timeline .timeline_item {
-	display: block;
-	overflow: hidden;
-}
-#about_me .timeline .timeline_icon {
-	left: 47.20%;
-	margin: 30px 0 0 0;
-	position: absolute;
-}
-#about_me .timeline .timeline_date {
-    width: 50%;
-    position: relative;
-    float: right;
-}
-#about_me .timeline .timeline_event	{
-    width: 50%;
-    height: auto;
-    position: relative;
-    float: left;
-}	
 
 /*About Me End*/
 
 /*My Skills Start*/
 #my_skills {
-	background: #f7ddbe;
-	text-align: center;
+	height: auto;
+	max-height: auto;
 }
 #my_skills .skills {
-	max-height: auto; 
+	height: auto;
+	background: #f7ddbe;
+	text-align: center
 }
 #my_skills .shelf_left {
 	border-right: 3px solid black;
@@ -132,11 +75,13 @@ header {
 	color: black;
 }
 
-#my_skills aside .shelf_item img {
-	width:40%;
-	float: left;
+#my_skills .shelf_left aside img {
+	width: 40%;
 }
 
+#my_skills .shelf_right img {
+	width: 60%;
+}
 /*My Skills End*/
 
 /*Projects Start*/
