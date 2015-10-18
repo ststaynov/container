@@ -22,6 +22,14 @@ body {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
+@media  screen and (max-width: 320px) {
+
+   body { font-size: 50%; }
+}
+@media  screen and (min-width: 321px) and (max-width: 1024px) {
+
+   body { font-size: 75%; }
+}
 h1,h2,h3,p {
 	color: #fff;
 	text-rendering: optimizeLegibility;
@@ -54,4 +62,6 @@ h2 {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 1.5em;
 }
+
+
 
