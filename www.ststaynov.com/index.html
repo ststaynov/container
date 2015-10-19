@@ -36,8 +36,25 @@
             
             <!--Code for the About Me section-->
 
-            <section class="about_me container">
-               
+            <section class="about_me">
+                <div class="position">
+                    <img src="img/post-it/post-it.png" data-0="transform:translate(-380%,50%);" data-500="transform:translate(0%,20%);" alt="">
+                </div>
+                <div class="position">
+                    <img src="img/post-it/post-it-teamplayer.png" data-0="transform:translate(380%,0%);" data-500="transform:translate(0%,20%);" alt="">
+                </div>
+                <div class="position">
+                    <img src="img/post-it/post-it-punctual.png" data-0="transform:translate(-380%,50%);" data-500="transform:translate(0%,20%);" alt="">
+                </div>
+                <div class="position">
+                    <img src="img/post-it/post-it-problemsolving.png" data-0="transform:translate(380%,0%);" data-500="transform:translate(0%,20%);" alt="">
+                </div>
+                <div class="position">
+                    <img src="img/post-it/post-it-organized.png" data-0="transform:translate(-380%,50%);" data-500="transform:translate(0%,20%);" alt="">
+                </div>
+                <div class="position">
+                    <img src="img/post-it/post-it-fastlearner.png" data-0="transform:translate(380%,0%);" data-500="transform:translate(0%,20%);" alt="">
+                </div>
             </section>
         </div>
 
@@ -134,48 +151,12 @@
                   </ul>
                 </nav>
             </section>
-            <!-- Background Portrait -->
-                <!-- <div class="bg-portrait" style="display: block;"></div> -->
-            <!-- Background Portrait End -->
-		<script src="js/main.min.js"></script>
- 			<script>
-		particlesJS('particles-js', {
-    particles: {
-        color: '#83E083',
-        shape: 'triangle',
-        opacity: 1,
-        size: 2.5,
-        size_random: true,
-        nb: 100,
-        line_linked: {
-            enable_auto: true,
-            distance: 340,
-            color: '#83E083',
-            opacity: 0.5,
-            width: 1,
-            condensed_mode: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 600
-            }
-        },
-        anim: {
-            enable: true,
-            speed: 1.5
-        }
-    },
-    interactivity: {
-        enable: true,
-        mouse: {
-            distance: 100
-        },
-        detect_on: 'canvas',
-        mode: 'grab'
-    },
-    retina_detect: true
-});
-		</script>
-
-
+        
+            <script type="text/javascript" src="js/skrollr.min.js"></script>
+            <script type="text/javascript">
+                var s = skrollr.init({
+                forceHeight: false
+             });
+            </script>
 	</body>
 </html>

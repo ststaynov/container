@@ -28,9 +28,6 @@ header {
 	height: 50%;
 	position: relative;
   	margin: 0 auto;
-	/*border:1px solid white;*/
-	background: url('../img/postIt.png') no-repeat center center fixed;
-    background-size: cover;
 }
 .title_icon img	{
 	height: auto;
@@ -46,8 +43,22 @@ header {
     left: 0px;
     background: #bababa;
 }
-
-
+.position {
+  width: 50%;
+  padding-bottom: 2%;
+  float: left;
+  overflow: hidden;
+}
+.position:nth-of-type(odd) img{
+	width: 20%;
+	margin-right: 10%;
+	float: right;
+}
+.position:nth-of-type(even) img{
+	width: 20%;
+	margin-left: 10%;
+	float: left;
+}
 /*My Skills Start*/
 #my_skills {
 	height: auto;
