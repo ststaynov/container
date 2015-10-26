@@ -9,11 +9,17 @@ header {
   left: 25%;
   text-align: center;
 }
+header h1, header h1:before, header h1:after {
+	border: none;
+	color: white;
+}
+header .typed {
+	color: #ff9999;
+}
 .bg-portrait {
     width: 100%;
-    height: 100%;
     background-color: #222;
-    background: url('../img/bg-whole.jpg') no-repeat center center fixed;
+    background: url('../img/bg-whole-on.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 0;
 }
@@ -21,9 +27,11 @@ header {
 .bg-portrait .intro {
 	width: 100%;
 	height: 50%;
+	background: black;
+	opacity: 0.6;
 	position: relative;
 }
-.bg-portrait .about_me {
+.bg-portrait .post-it {
 	width: 100%;
 	height: 50%;
 	position: relative;
@@ -59,40 +67,6 @@ header {
 	margin-left: 10%;
 	float: left;
 }
-/*My Skills Start*/
-#my_skills {
-	height: auto;
-}
-#my_skills .skills {
-	height: auto;
-	background: #f7ddbe;
-	text-align: center
-}
-#my_skills .shelf_left {
-	border-right: 3px solid black;
-}
-#my_skills aside .shelf_item {
-	width: 90%;
-	float: left;
-	margin:0 0 0 10%;
-}
-#my_skills aside .shelf_item h2 {
-	width: 30%;
-	color: black;
-}
-#my_skills aside .shelf_item:nth-of-type(5) h2 {
-	min-width: 100px;
-}
-#my_skills .shelf_left img {
-	width: 40%;
-	max-width: 200px; 
-	float: left;
-}
-
-#my_skills .shelf_right img {
-	width: 60%;
-}
-/*My Skills End*/
 
 /*Projects Start*/
 #projects {
@@ -126,6 +100,14 @@ header {
 	opacity:  0.4;
 }
 /*Projects End*/
+
+/*LinkedIn SVG Start*/
+.linked-svg {
+	max-width: 100%;	
+	background-color: white;
+}
+
+/*LinkedIn SVG End*/
 
 /*Footer Start*/
 #footer	{
