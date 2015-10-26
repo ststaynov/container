@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	
-<head>
+    <head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -14,29 +14,49 @@
         <link rel="stylesheet" type="text/css" href="css/grid.css" />
     	<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<!--<script src="js/modernizr.custom.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/animate.css" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<script src="../use.typekit.net/pzx0zeb.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
-		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>-->
+        <!-- Text Typing Start -->
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+        <script src="js/typed.js"></script>
+        <!-- Text Typing End -->
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/jquery.simplr.smoothscroll.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(function () {               
+                  $.srSmoothscroll({
+                    // defaults
+                    step: 55,
+                    speed: 400,
+                    ease: 'swing',
+                    target: $('body'),
+                    container: $(window)
+                  })    
+            });
+        </script>-->
+      <!-- Smooth Scrolling End-->
 	</head>
 	<body>
-<!-- 		<div id="preloader">
-        <div id="loading-animation">&nbsp;</div> -->
-        <!--Code for the particle section--> 
         <div class="bg-portrait" style="height:200%;">
             <section class="intro container">
                 
             </section>
 
             <header class="span-12 push-6custom">
-                <h1>Hey, I'm <strong>Stoyan Staynov</strong>, a <strong class="tag">
-                    <span class="typed">Web Developer</span>
-                    <span id="typed-cursor">|</span>.</strong>
-                </h1>
+                <h1>Hello, I'm <strong>Stoyan Staynov</strong>, a <strong class="tag">
+                    <span class="typed">Web Developer</span>.</strong>
+                </h1>   
             </header>
-            
+            <script type="text/javascript">
+            ;(function($){
+                $(document).ready(function($){
+                    $(".typed").typed({
+                        typeSpeed: 1,
+                        backDelay: 2500,
+                        cursorChar: "",
+                        strings: ["Creative Web Geek", "Front-End Developer", "Designer",  "Tea Drinker", "Typography Lover", "City Explorer", "Conference Attender"]
+                    });
+                });
+            })(jQuery);
+            </script>
             <!--Code for the Post It-s section-->
 
             <section class="post-it">
@@ -60,7 +80,6 @@
                 </div>
             </section>
         </div>
-
             <!--Code for the Projects section-->
             <div class="projects_title">
                     <h1>RECENT PROJECTS</h1> 
@@ -92,9 +111,6 @@
            <!--Code for the LinkedIn section-->
             <section class="linked-svg container">
 
-<!--                     <polyine style="fill:none;stroke:#000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6000;stroke-dashoffset:0" data-2000="stroke-dashoffset:6000;" data-end="stroke-dashoffset:0;" points="3.9,0 908.1,549.1 894.3,9.8 47.5,539.6 413.4,0 
-                    419.8,541.7 "/>
-                    </svg> -->
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve">
             <g id="Third_Load">
@@ -131,9 +147,8 @@
                 </image>
             </g>
             </svg>
-
-
             </section>
+
             <!--Code for the Footer section-->
             <section id="footer" class="container" >
                 <p class="span-4">© 2015</h2>
@@ -145,12 +160,14 @@
                   </ul>
                 </nav>
             </section>
-        
+            
             <script type="text/javascript" src="js/skrollr.min.js"></script>
             <script type="text/javascript">
                 var s = skrollr.init({
-                forceHeight: false
+                forceHeight: false,
+                smoothScrollingDuration: 400
+
              });
             </script>
-	</body>
+    </body>
 </html>
