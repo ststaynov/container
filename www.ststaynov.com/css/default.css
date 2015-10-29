@@ -1,16 +1,5 @@
 /* General Blueprint Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {
-	font-family: 'fontawesome';
-	src:url('../fonts/fontawesome.eot');
-	src:url('../fonts/fontawesomed41d.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
-		url('../fonts/fontawesome.woff') format('woff'),
-		url('../fonts/fontawesome.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -18,7 +7,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 
 
 body {
-	font-family:"Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+	font-family:"Helvetica Neue", "Helvetica", "Roboto", 'Josefin Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
@@ -33,18 +22,21 @@ body {
 h1,h2,h3,p {
 	color: #fff;
 	text-rendering: optimizeLegibility;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
 	width:100%;
-	margin: 36px 0 36px 0;
-	font-family: "bebas_neue_regularregular", "BebasNeue", "BebasNeue Regular", "BebasNeueRegular", sans-serif;
-	font-weight: 700;
+	margin: 90px 0 10px 0;
+	font-weight: 600;
 	color: #000;
 	font-size: 2em;
 	font-weight: bold;
 }
-
-h1:before {
+p {
+    font-size: 2em;
+    font-weight: 300;
+}
+/*h1:before {
     content: "";
     border: 2px solid #222223;
     width: 20%;
@@ -57,7 +49,7 @@ h1:after {
     width: 20%;
     display: block;
     margin: 0px auto;	
-}
+}*/
 h2 {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 1.5em;

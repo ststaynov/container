@@ -3,10 +3,11 @@ html, body,
 .container { 
 	height: 100%;
 }
+
 header {
   position: absolute;
-  top: 45%;
-  left: 25%;
+  top: 13%;
+  left: 4%;
   text-align: center;
 }
 header h1, header h1:before, header h1:after {
@@ -16,71 +17,67 @@ header h1, header h1:before, header h1:after {
 header .typed {
 	color: #ff9999;
 }
-.bg-portrait {
+header .intro_description {
+	padding-top: 15px;
+}
+.projects_title {
+	width: 100%;
+	height: 20%;
+	background-color: #fff;
+	text-align: left;
+	overflow: hidden;
+}
+.projects_title h1 {
+	margin-left: 30px;
+}
+.intro {
     width: 100%;
-    background-color: #222;
-    background: url('../img/bg-whole-on.jpg') no-repeat center center fixed;
+    height: 960px;
+    position: relative;
+    background: url('../img/bg-whole-off.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 0;
 }
-
-.bg-portrait .intro {
-	width: 100%;
-	height: 50%;
-	background: black;
-	opacity: 0.8;
-	position: relative;
+/*Lamp-ON Start*/
+.lamp-on {
+    height: 960px;
+    position: relative;
+	background: #fff;
+    text-align: center;
 }
-.bg-portrait .post-it {
-	width: 100%;
-	height: 50%;
-	position: relative;
-  	margin: 0 auto;
+.lamp-on svg {
+	width: 70%;
 }
-.title_icon img	{
-	height: auto;
-    vertical-align: middle;
+.process {
+	background: #F8F8F8;
+	height: 960px;
+	border: 1px solid black;
+	text-align: center;
 }
-
-.title_icon:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 23px;
-    left: 0px;
-    background: #bababa;
+.process .projects_title {
+	background: #F8F8F8;
 }
-.position {
-  width: 50%;
-  padding-bottom: 2%;
-  float: left;
-  overflow: hidden;
+.process svg {
+	margin-top: 150px;
+	width: 70%;
+	height: 170px;
 }
-.position:nth-of-type(odd) img{
+.process .d-element {
 	width: 20%;
-	margin-right: 10%;
-	float: right;
-}
-.position:nth-of-type(even) img{
-	width: 20%;
-	margin-left: 10%;
+	min-width: 125px;
+	display: block;
 	float: left;
 }
-
+.process .d-element p {
+	margin-top: 20px;
+	color: #000;
+}
 /*Projects Start*/
 #projects {
 	max-width: 100%;
 	height: auto;
 	margin: 0;
 	background: #1f2a30;
-}
-.projects_title {
-	width: 100%;
-	height: 20%;
-	background-color: #fff;
-	text-align: center;
-	overflow: hidden;
 }
 #projects a {	
 	border: 1px solid white;
@@ -105,6 +102,7 @@ header .typed {
 .linked-svg {
 	max-width: 100%;	
 	height: auto;
+	max-height: 150%;
 	background-color: white;
 	overflow: hidden;
 }
