@@ -1,9 +1,13 @@
 /* Set all parents to full height */
 html, body, 
-.container { 
+.container {
 	height: 100%;
 }
-
+main {     
+    zoom: 1.25; /* Other non-webkit browsers */
+    zoom: 125%; /* Webkit browsers */
+}
+section{width: 100%}
 header {
   position: absolute;
   top: 13%;
@@ -34,24 +38,54 @@ header .intro_description {
     width: 100%;
     height: 960px;
     position: relative;
-    background: url('../img/bg-whole-off.jpg') no-repeat center center fixed;
-    background-size: cover;
     padding: 0;
 }
-/*Lamp-ON Start*/
+/* Slide 1 */
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+#slide-1 .bcg {
+	background: url('../img/bg-whole-off.jpg') no-repeat center center fixed;
+    background-size: cover;
+	height: 100%;
+	width:100%;
+}
+/* Slide 1 */
+/*Slide 2 */
 .lamp-on {
     height: 960px;
     position: relative;
-	background: #fff;
+	background: #778CA6;
     text-align: center;
 }
-.lamp-on svg {
-	width: 70%;
+.lamp-on .pencil {
+	width: 40px;
+	float: right;
+	margin-right: 23%;
 }
+.pencil-line {
+	width: 40%;
+	margin-left: 35%;
+	border:1px solid black;
+}
+#slide-2 .bcg {
+	background: url('../img/koppele.png') no-repeat center center fixed;
+	height: 100%;
+	width:100%;
+}
+/*Slide 2 */
+/*Slide 3 */
 .process {
 	background: #F8F8F8;
 	height: 960px;
-	border: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black
 	text-align: center;
 }
 .process .projects_title {
@@ -72,7 +106,8 @@ header .intro_description {
 	margin-top: 20px;
 	color: #000;
 }
-/*Projects Start*/
+/*Slide 3 */
+/*Slide 4 - Projects*/
 #projects {
 	max-width: 100%;
 	height: auto;
@@ -96,9 +131,9 @@ header .intro_description {
 #projects a img:hover {
 	opacity:  0.4;
 }
-/*Projects End*/
+/*Slide 4 - Projects*/
 
-/*LinkedIn SVG Start*/
+/*Slide 4 - LinkedIn*/
 .linked-svg {
 	max-width: 100%;	
 	height: auto;
@@ -107,7 +142,7 @@ header .intro_description {
 	overflow: hidden;
 }
 
-/*LinkedIn SVG End*/
+/*Slide 4 - LinkedIn*/
 
 /*Footer Start*/
 #footer	{

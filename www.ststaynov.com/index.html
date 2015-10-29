@@ -37,41 +37,57 @@
 	</head>
 	<body>
 		<main>
-				<section class="intro container">
-					
-
-					<header class="span-24 push-custom">
-						<h1>Hello, I'm <strong>Stoyan Staynov</strong>, a <strong class="tag">
-							<span class="typed">Web Developer</span>.</strong>
-						</h1>
-						<h2 class="intro_description">I'm from <strong>Bulgaria</strong> and passionate about creating <strong>beautiful</strong>, <strong>minimal</strong> designs for the <strong>web</strong>, <strong>apps</strong> and <strong>print</strong> and the <strong>journey</strong> it takes me on.</h2>   
-					</header>
-					<script type="text/javascript">
-					;(function($){
-						$(document).ready(function($){
-							$(".typed").typed({
-								typeSpeed: 1,
-								backDelay: 2500,
-								cursorChar: "",
-								strings: ["Creative Web Geek", "Front-End Developer", "Designer",  "Tea Drinker", "Typography Lover", "City Explorer", "Conference Attender"]
+				<section id="slide-1" class="intro container">
+	        		<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;">
+							<header class="span-8 push-custom">
+								<h1>Hello, I'm <strong>Stoyan Staynov</strong>, a <strong class="tag">
+									<span class="typed">Web Developer</span>.</strong>
+								</h1>
+								<h2 class="intro_description">I'm from <strong>Bulgaria</strong> and passionate about creating <strong>beautiful</strong>, <strong>minimal</strong> designs for the <strong>web</strong>, <strong>apps</strong> and <strong>print</strong> and the <strong>journey</strong> it takes me on.</h2>   
+							</header>
+						<script type="text/javascript">
+						;(function($){
+							$(document).ready(function($){
+								$(".typed").typed({
+									typeSpeed: 1,
+									backDelay: 2500,
+									cursorChar: "",
+									strings: ["Creative Web Geek", "Front-End Developer", "Designer",  "Tea Drinker", "Typography Lover", "City Explorer", "Conference Attender"]
+								});
 							});
-						});
-					})(jQuery);
-					</script>
-				</section>
+						})(jQuery);
+						</script>
+					</div>
+					</section>
 				<!-- Code for Lamp-on section -->
-				<section class="lamp-on container">
-					<div class="projects_title">
-							<h1>This is where I live</h1> 
+				<section id="slide-2" class="lamp-on">
+					<div class="bcg"><!-- data-150-top="background-color:rgb(1,27,59);" data-250-top="background-color:(255,255,255);"  data-anchor-target="path" -->
+						<div class="projects_title">
+								<h1>THIS IS WHERE I LIVE</h1>
+								<div class="pencil" data-500="transform:translate(-1800%,0%);" data-80-top="transform:translate(0%,0%);"  data-anchor-target="#slide-2">
+									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 viewBox="0 0 426.854 426.854" style="enable-background:new 0 0 426.854 426.854;" xml:space="preserve">
+									<path d="M380.044,2.321h-39.21L60.736,282.409L0,415.525l23.852,9.008l122.915-56.094L426.854,88.352v-39.22L380.044,2.321z
+										 M134.409,344.396l229.46-229.46l8.302,8.302l-229.46,229.46L134.409,344.396z M124.509,334.496l-29.822-29.822l229.46-229.46
+										l29.822,29.822L124.509,334.496z M84.787,294.774l-8.309-8.308L305.943,57.009l8.304,8.304L84.787,294.774z M68.761,298.548
+										l61.867,61.868l-55.112,25.151L35.89,370.592L68.761,298.548z M23.344,409.376l-4.393-1.659l11.115-24.36l27.511,10.396
+										L23.344,409.376z M412.854,82.553l-30.784,30.784L315.843,47.11l30.79-30.788h27.612l38.609,38.61V82.553z"/>
+
+									</svg> 
+								</div>
+
+						</div>
+						<div class="pencil-line">	
+
+						</div>
 					</div>
-
-
 				</section>
-				<section class="process container">
-					<div class="projects_title">
-						<h1>THIS IS MY WAY OF WORK</h1> 
-					</div>
-					
+				<section class="process">
+					<container class="container">
+						<div class="projects_title">
+							<h1>THIS IS MY WORKFLOW</h1> 
+						</div>
+						
 						<div class="research d-element">
 							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								 viewBox="0 0 31.1 40.5" enable-background="new 0 0 31.1 40.5" xml:space="preserve">
@@ -682,7 +698,8 @@
 							</g>
 							</svg>
 							<p>completion</p>
-						</div>						
+						</div>	
+					</container>					
 				</section>
 				<!--Code for the Projects section-->
 				<div class="projects_title">
@@ -765,13 +782,7 @@
 					</nav>
 				</section>
 			</main>    
-			<script type="text/javascript" src="js/skrollr.min.js"></script>
-			<script type="text/javascript">
-				var s = skrollr.init({
-				forceHeight: false,
-				smoothScrollingDuration: 400
-
-			 });
-			</script>
+			<script src="js/skrollr.min.js"></script>
+			<script src="js/main.min.js"></script>
 	</body>
 </html>
