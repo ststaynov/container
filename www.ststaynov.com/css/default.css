@@ -1,7 +1,6 @@
 /* General Blueprint Style */
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
 
-
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
@@ -10,6 +9,17 @@ body {
 	font-family:"Helvetica Neue", "Helvetica", "Roboto", 'Josefin Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    /*Keep same ratio cross-browser*/    
+    zoom: 1; /* IE */
+    -moz-transform: scale(1); /* Firefox */
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(1); /* Opera */
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(1); /* Safari And Chrome */
+    -webkit-transform-origin: 0 0;
+    transform: scale(1); /* Standard Property */
+    transform-origin: 0 0;  /* Standard Property */
+
 }
 @media  screen and (max-width: 320px) {
 
@@ -26,7 +36,6 @@ h1,h2,h3,p {
 }
 h1 {
 	width:100%;
-	margin: 90px 0 10px 0;
 	font-weight: 600;
 	color: #000;
 	font-size: 2em;

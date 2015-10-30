@@ -1,11 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 /* Set all parents to full height */
 html, body, 
 .container {
 	height: 100%;
-}
-main {     
-    zoom: 1.25; /* Other non-webkit browsers */
-    zoom: 125%; /* Webkit browsers */
 }
 section{width: 100%}
 header {
@@ -114,6 +113,9 @@ header .intro_description {
 	margin: 0;
 	background: #1f2a30;
 }
+#projects .projects_title {
+  background: #F8F8F8;
+}
 #projects a {	
 	border: 1px solid white;
 	background: #000;
@@ -127,6 +129,7 @@ header .intro_description {
 	width: 100%;
 	vertical-align: top;
 	transition: all 0.5s ease-in-out;
+	opacity: 0;
 }
 #projects a img:hover {
 	opacity:  0.4;
@@ -134,29 +137,134 @@ header .intro_description {
 /*Slide 4 - Projects*/
 
 /*Slide 4 - LinkedIn*/
-.linked-svg {
+.business-card {
 	max-width: 100%;	
 	height: auto;
 	max-height: 150%;
-	background-color: white;
+	box-sizing: border-box;
 	overflow: hidden;
+	background-color: #fcfcfc;
+	font: 700 2em/1 "Amatic SC", cursive;	
+	text-align: center;
+	text-transform: uppercase;
+}
+.card {
+  border: 0.125em solid #252525;
+  margin: 1em auto;
+  max-width: 16em;
+}
+.card:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.card h1 {    
+  font: 700 2em/1 "Amatic SC", cursive;   
+}   
+.card h3 {    
+  font: 700 1em/1 "Amatic SC", cursive;   
+}   
+.card .location {   
+  color: #252525;   
+}
+aside {
+  border-bottom: 0.125em solid #252525;
+}
+@media screen and (min-width: 45em) {
+  aside {
+    float: left;
+    width: 25%;
+    border-right: 0.125em solid #252525;
+    border-bottom: none;
+  }
 }
 
+abbr {
+  width: 50%;
+  float: left;
+}
+  /*Avoid mozilla dot underlining abbr bug  */  
+abbr[title] {   
+  border-bottom: none !important;   
+  cursor: default !important;   
+  text-decoration: none !important;   
+}
+@media screen and (min-width: 22.5em) {
+  abbr {
+    float: none;
+    width: auto;
+  }
+}
+
+abbr {
+  display: block;
+  line-height: 3.375em;
+  border-right: 0.125em solid #252525;
+}
+abbr sup {
+  position: relative;
+  font-size: 0.675em;
+  top: -1em;
+}
+@media screen and (min-width: 22.5em) {
+  abbr {
+    border-right: none;
+    border-bottom: 0.125em solid #252525 !important;
+  }
+}
+
+.logo {
+  display: block;
+  line-height: 3.375em;
+  border-top: 0.125em solid #252525;
+  color: #252525;
+}
+
+.name {
+  font-size: 2em;
+  padding: 0.75em 0.25em;
+}
+@media screen and (min-width: 22.5em) {
+  .name {
+    float: left;
+    width: 75%;
+  }
+}
+
+.occupation,
+.location {
+  padding: 0.475em 0.75em;
+  border-top: 0.125em solid #252525;
+  margin-top: 0.125em;
+  float: right;
+  width: 50%;
+}
+@media screen and (min-width: 22.5em) {
+  .occupation,
+  .location {
+    width: 37.5%;
+  }
+}
+
+.occupation {
+  color: #fcfcfc;
+  background-color: #252525;
+}
 /*Slide 4 - LinkedIn*/
 
 /*Footer Start*/
 #footer	{
 	max-width: 100%;
 	height: 10%;
-	background: #fff;
+	background: #000;
 	text-align: center;
 }
 #footer p {	
-	text-align: left;
-	margin: 15px 0 7px 10px;
-	color: #000;
+	margin: 15px 0 0 0;
+	color: #FCFCFC;
+  font: 700 2em/1 "Amatic SC", cursive;
 }
-#footer nav {
+/*#footer nav {
 	margin: 10px 0 0px 0;
 	float: right;
 }
@@ -179,10 +287,10 @@ header .intro_description {
 .nav a {
 	width: 20px;
 	height: 20px;
-	color: #fff;
+	color: #FCFCFC;
 	display: block;
 	background-image: url("http://billyfrench.com/sites/all/themes/jf/assets/img/sprite.svg");
  	background-position: center;
 	background-position: -35px -65px;
-}
-/*Footer End*/
+}*/
+/*Footer End
