@@ -35,7 +35,7 @@ header .intro_description {
 }
 .intro {
     width: 100%;
-    height: 960px;
+    height: 960px;  
     position: relative;
     padding: 0;
 }
@@ -51,53 +51,58 @@ header .intro_description {
 }
 #slide-1 .bcg {
 	background: url('../img/bg-whole-off.jpg') no-repeat center center fixed;
-    background-size: cover;
+  background-size: cover;
+  background-color: #CFC7B1;
 	height: 100%;
 	width:100%;
 }
 /* Slide 1 */
 /*Slide 2 */
-.lamp-on {
-    height: 960px;
-    position: relative;
-	background: #778CA6;
-    text-align: center;
+#slide-2 {
+  height: 960px;
+  position: relative;
+  padding: 10%;
+  background: #FEFEFE;
+  text-align: center;
 }
-.lamp-on .pencil {
-	width: 40px;
-	float: right;
-	margin-right: 23%;
+#slide-2 img {
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
 }
-.pencil-line {
-	width: 40%;
-	margin-left: 35%;
-	border:1px solid black;
+#slide-2 ul {
+  margin: 10% 0;
+  list-style: none;
+}
+#slide-2 li {
+    box-sizing: border-box;
+    margin: 0;
+    width: 50%;
+    padding-right: 2.5%;
+    float: left;
 }
 #slide-2 .bcg {
-	background: url('../img/koppele.png') no-repeat center center fixed;
 	height: 100%;
 	width:100%;
 }
 /*Slide 2 */
 /*Slide 3 */
 .process {
-	background: #F8F8F8;
-	height: 960px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black
+  height: 960px;
+  padding: 10%;
+	background-color: #FEFEFE;
 	text-align: center;
 }
 .process .projects_title {
-	background: #F8F8F8;
+  text-align: center;
 }
 .process svg {
-	margin-top: 150px;
-	width: 70%;
 	height: 170px;
 }
 .process .d-element {
 	width: 20%;
 	min-width: 125px;
+  margin-top: 150px;
 	display: block;
 	float: left;
 }
@@ -114,7 +119,10 @@ header .intro_description {
 	background: #1f2a30;
 }
 #projects .projects_title {
-  background: #F8F8F8;
+  background: #CFC7B1;
+}
+#projects .projects_title h1 {
+  color: #FFF;
 }
 #projects a {	
 	border: 1px solid white;
@@ -123,7 +131,6 @@ header .intro_description {
 #projects .row_top a {	
 	border-bottom: 0px;
 }
-
 
 #projects a img {
 	width: 100%;
@@ -233,11 +240,14 @@ abbr sup {
 
 .occupation,
 .location {
-  padding: 0.475em 0.75em;
+  padding: 0.375em 0.75em;
   border-top: 0.125em solid #252525;
   margin-top: 0.125em;
   float: right;
   width: 50%;
+}
+.occupation {
+  padding: 0.415em 0.75em;
 }
 @media screen and (min-width: 22.5em) {
   .occupation,
