@@ -10,12 +10,11 @@ section{width: 100%}
 header {
   position: absolute;
   top: 13%;
-  left: 4%;
+  left: 15%;
   text-align: center;
 }
-header h1, header h1:before, header h1:after {
-	border: none;
-	color: white;
+header h1{
+	color: #FEFEFE;
 }
 header .typed {
 	color: #ff9999;
@@ -43,14 +42,14 @@ header .intro_description {
 #slide-1 .bcg {
 	background: url('../img/bg-whole-off.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-color: #CFC7B1;
+  background-color: #000;
 	height: 100%;
 	width:100%;
 }
 /* Slide 1 */
 /*Slide 2 */
 #slide-2 {
-  height: 960px;
+  height: 760px;
   position: relative;
   padding: 10%;
   background: #FEFEFE;
