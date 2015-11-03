@@ -9,15 +9,12 @@ html, body,
 section{width: 100%}
 header {
   position: absolute;
-  top: 13%;
-  left: 15%;
+  top: 15%;
+  left: 25%;
   text-align: center;
 }
-header h1{
-	color: #FEFEFE;
-}
 header .typed {
-	color: #ff9999;
+	color: #952D2A;
 }
 header .intro_description {
 	padding-top: 15px;
@@ -55,10 +52,24 @@ header .intro_description {
   background: #FEFEFE;
   text-align: center;
 }
+#slide-2 h2 {
+margin: 20px 0;
+}
 #slide-2 img {
   height: 125px;
   width: 125px;
   border-radius: 100%;
+
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+}
+#slide-2 img:hover {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 #slide-2 ul {
   margin: 10% 0;
@@ -86,6 +97,9 @@ header .intro_description {
 .process .projects_title {
   text-align: center;
 }
+.process .process-items {
+  padding: 150px 0 0 0;
+}
 .process svg {
 	width:60%;
 }
@@ -95,7 +109,6 @@ header .intro_description {
 .process .d-element {
 	width: 15%;
 	min-width: 125px;
-  margin-top: 150px;
 	display: block;
 	float: left;
 }
@@ -109,20 +122,22 @@ header .intro_description {
 	max-width: 100%;
 	height: auto;
 	margin: 0;
-	background: #1f2a30;
+	background: #FEFEFE;
 }
 #projects .projects_title {
-  background: #CFC7B1;
+  text-align: center;
+  padding: 150px 0;
 }
-#projects .projects_title h1 {
-  color: #FFF;
-}
+
 #projects a {	
-	border: 1px solid white;
+  border-right: 20px solid #FEFEFE; 
 	background: #000;
 }
-#projects .row_top a {	
-	border-bottom: 0px;
+#projects .row_top, #projects .row_bottom {
+  padding: 20px 0 170px 20px;  
+}
+#projects .row_top {
+	padding-bottom: 0px;
 }
 
 #projects a img {
@@ -141,6 +156,7 @@ header .intro_description {
 	max-width: 100%;	
 	height: auto;
 	max-height: 150%;
+  padding: 150px 0;
 	box-sizing: border-box;
 	overflow: hidden;
 	background-color: #fcfcfc;
@@ -217,15 +233,16 @@ abbr sup {
   display: block;
   line-height: 3.375em;
   border-top: 0.125em solid #252525;
-  color: #252525;
+  color: #F10061;
 }
 
-.name {
+.linkedin {
   font-size: 2em;
+  color: #F10061;
   padding: 0.75em 0.25em;
 }
 @media screen and (min-width: 22.5em) {
-  .name {
+  .linkedin {
     float: left;
     width: 75%;
   }
@@ -250,7 +267,7 @@ abbr sup {
 }
 
 .occupation {
-  color: #fcfcfc;
+  color: #F10061;
   background-color: #252525;
 }
 /*Slide 4 - LinkedIn*/
@@ -258,42 +275,11 @@ abbr sup {
 /*Footer Start*/
 #footer	{
 	max-width: 100%;
-	height: 10%;
 	background: #000;
 	text-align: center;
 }
 #footer p {	
-	margin: 15px 0 0 0;
+	margin: 5px 0;
 	color: #FCFCFC;
-  font: 700 2em/1 "Amatic SC", cursive;
+  font: 700 1.3em/1 "Amatic SC", cursive;
 }
-/*#footer nav {
-	margin: 10px 0 0px 0;
-	float: right;
-}
-.nav ul {
-  list-style: none;
-  text-align: right;
-  padding: 0 10px 0 0;
-  margin: 5px 1px 0 0;
-}
-.nav li {
-	height: 100%;
-    display: inline-block;
-    margin-right: 7%;
-    line-height: 100%;
-    border: 1px solid #fff;
-}
-.nav li:last-of-type {
-    margin-right: 5px;
-}
-.nav a {
-	width: 20px;
-	height: 20px;
-	color: #FCFCFC;
-	display: block;
-	background-image: url("http://billyfrench.com/sites/all/themes/jf/assets/img/sprite.svg");
- 	background-position: center;
-	background-position: -35px -65px;
-}*/
-/*Footer End

@@ -36,21 +36,30 @@ h1,h2,h3,p {
 }
 h1 {
 	width:100%;
-	font-weight: 600;
+	font-weight: 300;
 	color: #000;
 	font-size: 2em;
-	font-weight: bold;
 }
 h2 {
     font-size: 1.2em;
     font-weight: 600;
     line-height: 20px;
+    color: #030303;
 }
 p {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 30px;
     color: #313131;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    background-color: #F10061;
 }
 /*h1:before {
     content: "";
