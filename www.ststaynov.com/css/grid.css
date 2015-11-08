@@ -210,25 +210,6 @@ div.append-bottom, .append-bottom {
   background: #e5eCf9;
 }
 
-/* Use this to create a horizontal ruler across a column. */
-hr {
-  background: #ddd;
-  color: #ddd;
-  clear: both;
-  float: none;
-  width: 100%;
-  height: 1px;
-  margin: 0 0 17px;
-  border: none;
-}
-
-hr.space {
-  background: #fff;
-  color: #fff;
-  visibility: hidden;
-}
-
-
 /* Clearing floats without extra markup
    Based on How To Clear Floats Without Structural Markup by PiE
    [http://www.positioniseverything.net/easyclearing.html] */

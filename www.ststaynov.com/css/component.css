@@ -9,12 +9,12 @@ html, body,
 section{width: 100%}
 header {
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 25%;
   text-align: center;
 }
 header .typed {
-	color: #952D2A;
+	color: #BE9F80;
 }
 header .intro_description {
 	padding-top: 15px;
@@ -37,9 +37,9 @@ header .intro_description {
     opacity: 0;
 }
 #slide-1 .bcg {
-	background: url('../img/bg-whole-off.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color: #000;
+	background: url('../img/bg_whole_scale.jpg') no-repeat center center fixed;
+  background-size: contain;
+  background-color: #fff;
 	height: 100%;
 	width:100%;
 }
@@ -98,13 +98,10 @@ margin: 20px 0;
   text-align: center;
 }
 .process .process-items {
-  padding: 150px 0 0 0;
+  padding: 150px 0 0 10%;
 }
 .process svg {
 	width:60%;
-}
-.process .research {
-  margin-left:10%;
 }
 .process .d-element {
 	width: 15%;
@@ -132,6 +129,7 @@ margin: 20px 0;
 #projects a {	
   border-right: 20px solid #FEFEFE; 
 	background: #000;
+  transition: all 0.5s ease-in-out; 
 }
 #projects .row_top, #projects .row_bottom {
   padding: 20px 0 170px 20px;  
@@ -147,11 +145,14 @@ margin: 20px 0;
 	opacity: 0;
 }
 #projects a img:hover {
-	opacity:  0.4;
+	opacity:  1
+}
+#projects a:hover {
+  background: none !important;
 }
 /*Slide 4 - Projects*/
 
-/*Slide 4 - LinkedIn*/
+/*Slide 5 - LinkedIn*/
 .business-card {
 	max-width: 100%;	
 	height: auto;
@@ -183,6 +184,12 @@ margin: 20px 0;
 .card .location {   
   color: #252525;   
 }
+@media screen and (max-width: 22.5em) {
+  .card {
+        border-top: none;
+  }
+}
+
 aside {
   border-bottom: 0.125em solid #252525;
 }
@@ -270,13 +277,12 @@ abbr sup {
   color: #F10061;
   background-color: #252525;
 }
-/*Slide 4 - LinkedIn*/
+/*Slide 5 - LinkedIn*/
 
 /*Footer Start*/
 #footer	{
 	max-width: 100%;
 	background: #000;
-	text-align: center;
 }
 #footer p {	
 	margin: 5px 0;
