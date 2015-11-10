@@ -1,21 +1,29 @@
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
+@media only screen and (min-width : 438px) {
+	#slide-3 .process-items .completion {
+		margin-left: 0%;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 883px) and (min-width : 0px) {
-#slide-3 .process-items .completion {
-	margin-left: 30%;
-}
+@media only screen and (max-width : 883px) and (min-width : 438px) {
+	#slide-3 .process-items .completion {
+		margin-left: 30%;
+	}
 }
 @media only screen and (max-width : 719px){
-.business-card .card .location {
-	    border-left: 0.125em solid #252525;
-}
-.business-card .card .occupation {
-    padding: 0.375em 0.75em;
-}
+	.business-card .card .location {
+		    border-left: 0.125em solid #252525;
+	}
+	.business-card .card .occupation {
+	    padding: 0.375em 0.75em;
+	}
+	#projects .row_top, #projects .row_bottom {
+    padding: 20px 0px 170px 0px;
+	}
+	#projects a {
+	    border-right: 0px;
+	}
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {

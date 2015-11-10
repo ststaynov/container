@@ -1,5 +1,6 @@
-/* General Blueprint Style */
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
@@ -7,7 +8,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 
 body {
 	font-family:"Helvetica Neue", "Helvetica", "Roboto", 'Josefin Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     /*Keep same ratio cross-browser*/    
     zoom: 1; /* IE */
@@ -32,7 +33,7 @@ body {
 h1,h2,h3,p {
 	color: #fff;
 	text-rendering: optimizeLegibility;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
 }
 h1 {
 	width:100%;
@@ -41,13 +42,15 @@ h1 {
 	font-size: 2em;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 600;
     line-height: 20px;
     color: #030303;
+    font-family: 'PT Sans', sans-serif;
 }
 p {
-    font-size: 1.5em;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.3em;
     font-weight: 300;
     line-height: 30px;
     color: #313131;
@@ -59,7 +62,7 @@ hr {
     margin: 0 auto;
     padding: 0;
     max-width: 100%;
-    background-color: #F10061;
+    background-color: #F3DF18;
 }
 /*h1:before {
     content: "";
