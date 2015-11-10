@@ -22,9 +22,11 @@
 		<!-- Text Typing End -->
 	</head>
 	<body>
+		<div id="preloader">
+	 	</div>
 		<main>
 				<section id="slide-1" class="intro">
-											<header>
+							<header>
 								<h1>Hello, I'm <strong>Stoyan Staynov</strong>, a <br><strong class="tag">
 									<span class="typed">Web Developer</span></strong>.
 								</h1>   
@@ -169,8 +171,6 @@
 						</div>	
 					</div>				
 				</section>
-				<script src="js/skrollr.min.js"></script>
-				<script src="js/main.min.js"></script>
 				<hr>
 				<!--Code for the Projects section-->
 				<section id="projects" class="container">
@@ -216,14 +216,17 @@
 				<!--Code for the Footer section-->
 				<section id="footer" class="container" >
 					<p class="span-4">&copy; 2015</p>
-<!-- 					<nav class="nav span-16">
-					  <ul>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-					  </ul>
-					</nav> -->
 				</section>
 		</main>    
+<script src="js/skrollr.min.js"></script>
+<script src="js/main.min.js"></script>
+<script>
+$(window).load(function() {
+// will first fade out the loading animation
+	jQuery("#loading-animation").fadeOut();
+	    // will fade out the whole DIV that covers the website.
+	jQuery("#preloader").delay(1000).fadeOut("slow");
+	});
+</script>
 	</body>
 </html>

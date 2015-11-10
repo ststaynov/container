@@ -2,6 +2,17 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
+#preloader {
+    background-color: #182327;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 9999999;
+}
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 

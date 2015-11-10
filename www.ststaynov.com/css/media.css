@@ -18,8 +18,11 @@
 	.business-card .card .occupation {
 	    padding: 0.375em 0.75em;
 	}
-	#projects .row_top, #projects .row_bottom {
-    padding: 20px 0px 170px 0px;
+	#projects .row_bottom {
+    	padding: 20px 0 170px 0;
+	}
+	#projects .row_top {
+		padding: 20px 0 0 0;
 	}
 	#projects a {
 	    border-right: 0px;
