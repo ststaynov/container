@@ -16,6 +16,7 @@ header h1 {
 }
 header .typed {
 	/*color: #BE9F80;*/
+  font-family: 'PT Sans', sans-serif;
   color: #FFCC00;
 }
 header .intro_description {
@@ -30,7 +31,7 @@ header .intro_description {
 }
 /* Slide 1 */
 #slide-1 .bcg {
-	background: url('../img/bg_whole_scale3.jpg') no-repeat center center fixed;
+	background: url('../img/bg_whole.jpg') no-repeat center center fixed;
   background-size: contain;
   background-color: #FEFEFE;
 	height: 100%;
