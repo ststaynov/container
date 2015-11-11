@@ -44,6 +44,69 @@
 						})(jQuery);
 						</script>
 	        		<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;"	>
+		        			<div class="organs">
+								<div class="organ-1">
+									<div class="brain">
+									</div>
+									<div class="skills">
+										<div id="s_one"><p>HTML</p></div>
+										<div id="s_two"><p>C#</p></div>
+										<div id="s_three"><p>JS</p></div>
+										<div id="s_four"><p>Java</p></div>
+										<div id="s_five"><p>CSS</p></div>
+									</div>
+								</div>
+								<div class="organ-2">
+									<div class="heart">
+									</div>
+									<div class="hobbys">
+										<div id="h_one"><p>skiing</p></div>
+										<div id="h_two"><p>laser <br> cutting</p></div>
+										<div id="h_three"><p>design <br> books</p></div>
+										<div id="h_four"><p>TED <br> talks</p></div>
+										<div id="h_five"><p>beer</p></div>
+									</div>
+								</div>	
+							</div>
+							<script> 
+							$(document).ready(function(){
+							    $(".brain").click(function(){
+							    $( "#s_one , #s_two, #s_three, #s_four, #s_five" ).fadeIn( "slow" );
+							    });
+							    $(".heart").click(function(){
+							    $( "#h_one , #h_two, #h_three, #h_four, #h_five" ).fadeIn( "slow" );
+							    });
+							//calculate the aspect ratio (which is the same as the background img aspect ratio) and assign it to the .organs div
+							var wH = $(window).height();
+							var nW = (950/1080)*wH;
+							$('.organs').css({height: wH, width: nW});
+							if($(window).width() <= nW)
+							{
+								$('.organs').css("display", "none"); 
+								$('.bcg').css("background-image", "url('/../img/bg_whole.jpg')");
+							
+							}else {
+								$('.organs').css("display", "block"); 
+								$('.bcg').css("background-image", "url('/../img/bg.jpg')");
+							}
+
+							$( window ).resize(function() {
+
+							var wH = $(window).height();
+							var nW = (950/1080)*wH;
+
+							if($(window).width() <= nW)
+							{
+								$('.organs').css("display", "none"); 
+								$('.bcg').css("background-image", "url('/../img/bg_whole.jpg')");
+							
+							}else {
+								$('.organs').css("display", "block"); 
+								$('.bcg').css("background-image", "url('/../img/bg.jpg')");
+							}
+							});
+						});
+						</script>
 					</div>
 				</section>
 				<!-- Code for Lamp-on section -->
@@ -54,7 +117,7 @@
 			                <li>
 			                    <img src="img/pencil.svg" alt="Design"><!-- data-200="transform:translate(-1800%,0%);" data-280-top="transform:translate(0%,0%)" -->
 			                    <h2>design</h2>
-			                    <p>A completely new website design for the hand of an existing style? This challenge I do not go out of the way.</p>
+			                    <p>I enjoy creating minimal designs for the web, but not if it for the sake of the User Experience.</p>
 			                </li>
 			                <li>
 			                    <img src="img/code.svg" alt="Development">
@@ -178,24 +241,24 @@
 						<h1>RECENT PROJECTS</h1> 
 					</div>
 					<div class="row_top span-24">
-						<a href="https://github.com/umbacben/BlackjackGame" class="span-8" style='background:#13A0BE;'>
+						<a href="https://github.com/umbacben/BlackjackGame" class="span-8" style='background:#252525;'>
 							<img class="alignnone" src="img/black_jack_700x466.png" alt="">
 						</a>
 						<a href="https://github.com/ststaynov/De-Koppele" class="span-8" style='background:#F3DF18;'>
 							<img class="alignnone" src="img/koppele_700x466.png" alt="" style=''>
 						</a>
-						<a href="" class="span-8 last" style='background:#785454;'>
+						<a href="" class="span-8 last" style='background:#252525;'>
 							<img class="alignnone" src="img/buddy_700x466.png" alt="" style=''>
 						</a>
 					</div>    
 					<div class="row_bottom span-24">
-						<a href="https://github.com/ststaynov/Kuubus" class="span-8" style='background:#A4104C;'>
+						<a href="https://github.com/ststaynov/Kuubus" class="span-8" style='background:#252525;'>
 							<img class="alignnone" src="img/cube_700x466.png" alt="" style=''>
 						</a>
-						<a href="https://github.com/OOD2/Map_project" class="span-8" style='background:#BBF9BB;'>
+						<a href="https://github.com/OOD2/Map_project" class="span-8" style='background:#F3DF18;'>
 							<img class="alignnone" src="img/shortestRoute_700x466.png" alt="" style=''>
 						</a>
-						<a href="https://github.com/OOD2/Map_project" class="span-8 last" style='background:#C5B7B1;'>
+						<a href="https://github.com/OOD2/Map_project" class="span-8 last" style='background:#252525;'>
 							<img class="alignnone" src="img/shortestRoute_700x466.png" alt="" style=''>
 						</a>
 					</div> 
