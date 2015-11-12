@@ -38,7 +38,7 @@
 									typeSpeed: 1,
 									backDelay: 2500,
 									cursorChar: "",
-									strings: [ "Front-End Developer", "UI Designer", "UX Designer",  "Web Surfer", "Typography Lover", "City Explorer", "Realistic Thinker"]
+									strings: [ "front-end developer", "UI designer", "UX designer",  "web surfer", "typography enthusiast", "codesig'er", "realistic thinker"]
 								});
 							});
 						})(jQuery);
@@ -49,6 +49,7 @@
 									<div class="brain">
 									</div>
 									<div class="skills">
+										<div id="a_left" style="left:4%"></div>
 										<div id="s_one"><p>HTML</p></div>
 										<div id="s_two"><p>C#</p></div>
 										<div id="s_three"><p>JS</p></div>
@@ -60,6 +61,7 @@
 									<div class="heart">
 									</div>
 									<div class="hobbys">
+										<div id="a_right"></div>
 										<div id="h_one"><p>skiing</p></div>
 										<div id="h_two"><p>laser <br> cutting</p></div>
 										<div id="h_three"><p>design <br> books</p></div>
@@ -70,12 +72,17 @@
 							</div>
 							<script> 
 							$(document).ready(function(){
+
 							    $(".brain").click(function(){
-							    $( "#s_one , #s_two, #s_three, #s_four, #s_five" ).fadeIn( "slow" );
+							    $( "#a_left" ).fadeOut( "slow" );
+							    $( "#s_one, #s_two, #s_three, #s_four, #s_five" ).fadeIn( "slow" );
 							    });
 							    $(".heart").click(function(){
-							    $( "#h_one , #h_two, #h_three, #h_four, #h_five" ).fadeIn( "slow" );
+							    $( "#a_right" ).fadeOut( "slow" );
+							    $( "#h_one, #h_two, #h_three, #h_four, #h_five" ).fadeIn( "slow" );
 							    });
+
+						    $( "#a_left, #a_right" ).fadeIn( "slow" );
 							//calculate the aspect ratio (which is the same as the background img aspect ratio) and assign it to the .organs div
 							var wH = $(window).height();
 							var nW = (950/1080)*wH;
@@ -115,14 +122,14 @@
 						<h1>WHAT I DO?</h1>
 			            <ul>
 			                <li>
-			                    <img src="img/pencil.svg" alt="Design"><!-- data-200="transform:translate(-1800%,0%);" data-280-top="transform:translate(0%,0%)" -->
+			                    <img src="img/pencil.svg" alt="Design">
 			                    <h2>design</h2>
 			                    <p>I enjoy creating minimal designs for the web, but not if it for the sake of the User Experience.</p>
 			                </li>
 			                <li>
 			                    <img src="img/code.svg" alt="Development">
 			                    <h2>development</h2>
-			                    <p>For the technical side of the website, I use the latest techniques and methods. HTML5 and CSS3 have virtually no secrets for me. Even with jQuery and PHP, I can keep me busy for hours.</p>
+			                    <p>For the coding part I use the latest capabilities of HTML5 and CSS3. If there is something those two can't do, jQuery and PHP come to the rescue. </p>
 			                </li>
 			            </ul>
 					</div>
@@ -244,7 +251,7 @@
 						<a href="https://github.com/umbacben/BlackjackGame" class="span-8" style='background:#252525;'>
 							<img class="alignnone" src="img/black_jack_700x466.png" alt="">
 						</a>
-						<a href="https://github.com/ststaynov/De-Koppele" class="span-8" style='background:#F3DF18;'>
+						<a href="https://github.com/ststaynov/De-Koppele" class="span-8" style='background:#FFCC00;'>
 							<img class="alignnone" src="img/koppele_700x466.png" alt="" style=''>
 						</a>
 						<a href="" class="span-8 last" style='background:#252525;'>
@@ -255,11 +262,11 @@
 						<a href="https://github.com/ststaynov/Kuubus" class="span-8" style='background:#252525;'>
 							<img class="alignnone" src="img/cube_700x466.png" alt="" style=''>
 						</a>
-						<a href="https://github.com/OOD2/Map_project" class="span-8" style='background:#F3DF18;'>
+						<a href="https://github.com/OOD2/Map_project" class="span-8" style='background:#252525;'>
 							<img class="alignnone" src="img/shortestRoute_700x466.png" alt="" style=''>
 						</a>
-						<a href="https://github.com/OOD2/Map_project" class="span-8 last" style='background:#252525;'>
-							<img class="alignnone" src="img/shortestRoute_700x466.png" alt="" style=''>
+						<a href="https://github.com/ProCP-GroupB/Traffic-simulator" class="span-8 last" style='background:#252525;'>
+							<img class="alignnone" src="img/crossroad_700x466.png" alt="" style=''>
 						</a>
 					</div> 
 				</section>
@@ -269,7 +276,7 @@
 					<div class="card">
 					  <aside>
 					    <abbr title="Stoyan Staynov - since 1994">ST<sup>94</sup></abbr>
-					    <a href="https://github.com/ststaynov" class="logo icon-github"></a>
+					    <a href="https://github.com/ststaynov" class="github icon-github"></a>
 					  </aside>
 					  <a href="https://nl.linkedin.com/pub/stoyan-staynov/84/66/875"><h1 class="linkedin">LinkedIn</h1></a>
 					  <h3 class="occupation">Web Developer</h3>
@@ -281,15 +288,15 @@
 					<p class="span-4">&copy; 2015</p>
 				</section>
 		</main>    
-<script src="js/skrollr.min.js"></script>
-<script src="js/main.min.js"></script>
-<script>
-$(window).load(function() {
-// will first fade out the loading animation
-	jQuery("#loading-animation").fadeOut();
-	    // will fade out the whole DIV that covers the website.
-	jQuery("#preloader").delay(1000).fadeOut("slow");
-	});
-</script>
+		<script src="js/skrollr.min.js"></script>
+		<script src="js/main.min.js"></script>
+		<script>
+		$(window).load(function() {
+		// will first fade out the loading animation
+			jQuery("#loading-animation").fadeOut();
+			    // will fade out the whole DIV that covers the website.
+			jQuery("#preloader").delay(1000).fadeOut("slow");
+			});
+		</script>
 	</body>
 </html>
